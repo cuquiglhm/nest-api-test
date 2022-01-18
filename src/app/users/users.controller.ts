@@ -11,7 +11,7 @@ export class UsersController {
   
   @Get()
   async index(){
-
+    return await this.usersService.getAll();
   }
 
   @Post()
